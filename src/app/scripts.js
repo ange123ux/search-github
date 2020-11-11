@@ -1,6 +1,6 @@
 
   $(window).scroll(function() {
-    if($(this).scrollTop() > 60)  /*height in pixels when the navbar becomes non opaque*/ 
+    if($(this).scrollTop() > 60)
     {
         $('.nav.opaque-navbar').addClass('.opaque');
     } else {
