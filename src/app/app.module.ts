@@ -17,7 +17,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { DataService } from './services/data.service';
 import { HttpModule } from '@angular/http';
 import { FontDirective } from './font-directive/font.directive';
-import { LastPipe } from './pipe/last.pipe';
+import { FirstPipe } from './pipe/first.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,7 @@ import { LastPipe } from './pipe/last.pipe';
     ReposComponent,
     NotFoundComponent,
     FontDirective,
-    LastPipe
+    FirstPipe
   ],
   imports: [
     BrowserModule,
