@@ -26,6 +26,8 @@ export class UsersComponent implements OnInit {
       console.log(repos);
       this.repos = repos;
     })
+
+    // Repeated subscribing of dataservice to allow for the display of default data 
    }
 
 

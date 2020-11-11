@@ -49,7 +49,4 @@ export class DataService {
     this.reponame = reponame;
   }
 
-  // updateShow(show:number){
-  //   this.show = this.show+10;
-  // }
 }
