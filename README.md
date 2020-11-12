@@ -1,7 +1,7 @@
 ## SEARCH GITHUB
 
 ### Description
-This project is about creating a GitHub search, where the users will put their GitHub name in the form and then all the repositories are displayed right away. Also, the users can be able to go deeper into their repositories to check wherever they want.
+This project is about creating a GitHub search, where the users will put their GitHub name in the form and then all the repositories are displayed right away. Also, the users can be able to go deeper into their repositories to check whatever they want.
 11/12th/2020.
 
 ### Author: Ange Uwimana
