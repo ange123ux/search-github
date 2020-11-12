@@ -16,7 +16,7 @@ export class DataService {
 
   private username: string;
   private reponame: string;
-  private show:number
+  // private show:number
  
 
   constructor(private http:Http) {
@@ -29,15 +29,15 @@ export class DataService {
    }
 
    getUsers(){
-     return this.http.get(environment.apiUrl+'users/'+ this.username + "?access_token=" + environment.accessToken).pipe(map(res => res.json()));
+     return this.http.get('https://api.github.com/users/'+ this.username + "?access_token=" + environment.apiUrl).pipe(map(res => res.json()));
    }
 
    getRepos(){
-    return this.http.get(environment.apiUrl+ 'users/' + this.username + "/repos?order=created&sort=asc?access_token=" + environment.accessToken).pipe(map(res => res.json()));
+    return this.http.get('https://api.github.com/users/'+ this.username + "/repos?order=created&sort=asc?access_token=" + environment.apiUrl).pipe(map(res => res.json()));
   }
 
   getRepoInfo(){
-    return this.http.get( environment.apiUrl + 'search/repositories?q={' + this.reponame +'&sort=forks&order=asc?' + environment.accessToken).pipe(map(res => res.json()));
+    return this.http.get('https://api.github.com/users/'+ 'search/repositories?q={' + this.reponame +'&sort=forks&order=asc?' + environment.apiUrl).pipe(map(res => res.json()));
   }
 
   updateUsers(username:string){
