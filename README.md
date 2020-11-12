@@ -7,7 +7,7 @@ This project is about creating a GitHub search, where the users will put their G
 ### Author: Ange Uwimana
 
 ## About me
-[[ange123ux](https://github.com/ange123ux/quote)]
+[[ange123ux](https://github.com/ange123ux/search-github)]
 I consider myself as someone who is lucky because I grew up in a family where I am the first person to take programming classes. Currently, I am a student in Southern New Hampshire University and I am doing Communications in Business. Having a Software Developer degree will be an added advantage to my career, and I can't wait to make that big step in my life. 
 
 ## Setup/Installation Requirements
