@@ -12,7 +12,7 @@ export class ReposComponent implements OnInit {
 
   repos:Repos;
   reponame:string;
-  
+  show:number;
 
 
   constructor(private dataService: DataService) { 

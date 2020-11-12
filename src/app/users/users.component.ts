@@ -11,7 +11,7 @@ export class UsersComponent implements OnInit {
 
   users: Users;
   repos:any[];
-  // created_at:any;
+  created_at:any;
   username:string;
 
 

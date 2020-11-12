@@ -6,6 +6,5 @@ export class Users {
         this.login = login;
         this.avatar_url = avatar_url;
         this.html_url = html_url;
-
     }
 }
