@@ -8,7 +8,7 @@ import { UsersComponent } from './users/users.component';
 import { ReposComponent } from './repos/repos.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DataService } from './services/data.service';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 import { FontDirective } from './font-directive/font.directive';
 import { LastPipe } from './pipe/last.pipe';
 
@@ -24,7 +24,7 @@ import { LastPipe } from './pipe/last.pipe';
   imports: [
     BrowserModule,
     RoutingModule,
-    HttpClientModule,
+    HttpModule,
     FormsModule
 
   ],
