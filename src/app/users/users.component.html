@@ -1,15 +1,12 @@
 
-<!-- Navigation Section -->
 <app-root></app-root>
 
-<!-- Begin of Wrapper -->
 <div class="wrapper">
 
   <div class="container-fluid">
 
     <div class="row">
       
-      <!-- Search input Section -->
       <div class="container-fluid search">
         <form class="form-inline">
           <input class="form-control mr-sm-2" type="text" placeholder="Git Username" aria-label="Search" [(ngModel)]="username" name = "username" (keyup)= "searchUser()">
@@ -18,9 +15,7 @@
         <p class="searchtext">Enter Username to search for github profile</p>
       </div>
     </div>
-    <!-- End of search section -->
-
-  <!-- Begin of User Profile sectioin -->
+   
     <div class="row profile">
 
       <div class="col-md-12 col-sm-12">
@@ -33,22 +28,6 @@
                       <p class = "inline">
                         Username: {{users.login}}
                       </p>
-
-                      <!-- <span class="profile_follows">
-                        <span class="badge badge-primary">
-                        <i class="fas fa-user"></i>Followers
-                        <span class="spacing">{{users.followers}}</span>
-                      </span>
-                      <span class="badge badge-success">
-                        <i class="fas fa-user"></i>Following
-                        <span class="spacing">{{users.following}}</span>
-                      </span>
-                      <span class="badge badge-info">
-                        <i class="fas fa-code-branch"></i>Public Gist
-                        <span class="spacing">{{users.public_gist}}</span>
-                      </span>
-                      </span> -->
-
                   </div>
               </div>
 
@@ -78,16 +57,6 @@
                         <td>{{users.public_repos}}</td>
 
                       </tr>
-                      <!-- <tr *ngIf="users['hireable']">
-                        <td>Hireable</td>
-                        <td>{{users.hireable}}</td>
-
-                      </tr> -->
-                      <!-- <tr>
-                        <td *ngIf="users.company">Company</td>
-                        <td>{{users.company}}</td>
-
-                      </tr> -->
                     </table>
 
                     <p>
@@ -98,9 +67,7 @@
           </div>
         </div>
       </div>
-<!-- End of User Profile Section -->
 
-<!-- Begin of Repositories Section -->
       <div class="container-fluid">
           <h4 class="style2">{{users.name | first}}'s Repositories</h4>
           <hr class="style2">

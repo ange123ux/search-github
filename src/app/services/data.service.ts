@@ -29,15 +29,15 @@ export class DataService {
    }
 
    getUsers(){
-     return this.http.get(environment.apiUrl+'users/'+ this.username + "?access_token=" + environment.accessToken).pipe(map(res => res.json()));
+     return this.http.get(environment.miApiKey+'users/'+ this.username + "?miApiKey=" + environment.miApiKey).pipe(map(res => res.json()));
    }
 
    getRepos(){
-    return this.http.get(environment.apiUrl+ 'users/' + this.username + "/repos?order=created&sort=asc?access_token=" + environment.accessToken).pipe(map(res => res.json()));
+    return this.http.get(environment.miApiKey+ 'users/' + this.username + "/repos?order=created&sort=asc?miApiKey=" + environment.miApiKey).pipe(map(res => res.json()));
   }
 
   getRepoInfo(){
-    return this.http.get( environment.apiUrl + 'search/repositories?q={' + this.reponame +'&sort=forks&order=asc?' + environment.accessToken).pipe(map(res => res.json()));
+    return this.http.get( environment.miApiKey + 'search/repositories?q={' + this.reponame +'&sort=forks&order=asc?' + environment.miApiKey).pipe(map(res => res.json()));
   }
 
   updateUsers(username:string){
