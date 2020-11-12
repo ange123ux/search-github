@@ -16,7 +16,7 @@ export class UsersComponent implements OnInit {
 
 
   constructor(private dataService: DataService) {
-    this.users = new Users ("","","","","",new Date());
+    this.users = new Users ("","","","","",new Date(),0);
     this.dataService.getUsers().subscribe(users => {
       console.log(users);
       this.users = users;

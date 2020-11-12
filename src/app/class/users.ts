@@ -1,6 +1,6 @@
 export class Users {
     
-    constructor (public login:string,public name:string,public avatar_url:string,public html_url: string, public bio:string, public created_at:Date){
+    constructor (public login:string,public name:string,public avatar_url:string,public html_url: string, public bio:string, public created_at:Date, public public_repos:Number){
 
         this.name=name;
         this.login = login;
@@ -8,5 +8,6 @@ export class Users {
         this.html_url = html_url;
         this.bio = bio;
         this.created_at=created_at;
+        this.public_repos=public_repos;
     }
 }
